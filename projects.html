@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Sheli Rai</title>
+  <meta name="description" content="Demonstration web projects by Sheli Rai: calculator, to-do list, dashboards, responsive websites and more.">
+  <meta name="theme-color" content="#6366F1">
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Sheli Rai">
+  <meta property="og:description" content="Demonstration web projects by Sheli Rai: calculator, to-do list, dashboards, responsive websites and more.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- ===== HEADER (same on every page) ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo" aria-label="Sheli Rai - home">SHELI<span> RAI</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container">
+  <p class="breadcrumb"><a href="index.html">Home</a> / My Projects</p>
+  <h1>My Projects</h1><p>Demonstration projects built to practise HTML, CSS and JavaScript.</p></div></section>
+<section class="section"><div class="container">
+  <p class="note" data-reveal><strong>Please note:</strong> these are demonstration projects with sample information. Live Demo and GitHub buttons are disabled until real links are added.</p>
+  <div class="filters" role="group" aria-label="Filter projects" style="margin-top:1.8rem">
+    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+    <button class="filter-btn" type="button" data-filter="html-css" aria-pressed="false">HTML & CSS</button>
+    <button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+    <button class="filter-btn" type="button" data-filter="ui-design" aria-pressed="false">UI Design</button>
+  </div>
+  <div class="grid grid-3" id="project-grid">
+    <article class="card project" data-category="html-css javascript ui-design" data-long="A multi-page personal portfolio built with semantic HTML, a custom CSS design system and small JavaScript features such as a mobile menu and scroll animations." data-reveal data-delay="0">
+      <div class="thumb"><img src="assets/images/project-1.jpg" alt="Sample preview of the Personal Portfolio Website project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Personal Portfolio Website</h3><p>A responsive personal portfolio website.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="javascript ui-design" data-long="A frontend-only dashboard layout with student tables, search and form screens. It uses sample data only and has no database behind it." data-reveal data-delay="1">
+      <div class="thumb"><img src="assets/images/project-2.jpg" alt="Sample preview of the Student Management System UI project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Student Management System UI</h3><p>A frontend dashboard for managing student information.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="javascript" data-long="A calculator that adds, subtracts, multiplies and divides. It practises DOM events, functions and handling user input." data-reveal data-delay="2">
+      <div class="thumb"><img src="assets/images/project-3.jpg" alt="Sample preview of the Calculator Application project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Calculator Application</h3><p>A functional calculator with basic arithmetic operations.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="javascript" data-long="Add, complete and delete tasks. A good exercise in arrays, event handling and updating the page with JavaScript." data-reveal data-delay="0">
+      <div class="thumb"><img src="assets/images/project-4.jpg" alt="Sample preview of the To-Do List Application project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>To-Do List Application</h3><p>An interactive task management application.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="html-css ui-design" data-long="A sample company website with a hero, services, pricing and contact sections that adapts from phone to desktop using CSS Grid and Flexbox." data-reveal data-delay="1">
+      <div class="thumb"><img src="assets/images/project-5.jpg" alt="Sample preview of the Responsive Business Website project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Responsive Business Website</h3><p>A modern website for a sample business.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="javascript ui-design" data-long="Login and sign-up forms with client-side validation messages. It does not connect to a server, so no real accounts are created." data-reveal data-delay="2">
+      <div class="thumb"><img src="assets/images/project-6.jpg" alt="Sample preview of the Login and Registration UI project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Login and Registration UI</h3><p>A responsive authentication interface with frontend validation.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="ui-design html-css" data-long="A dashboard layout with stat cards and chart-style blocks showing made-up sample numbers for practising layout and visual hierarchy." data-reveal data-delay="0">
+      <div class="thumb"><img src="assets/images/project-7.jpg" alt="Sample preview of the Digital Marketing Dashboard project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>Digital Marketing Dashboard</h3><p>A dashboard displaying sample marketing statistics.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+    <article class="card project" data-category="html-css" data-long="A sample school website with pages for about, courses and contact. Focus: clean HTML structure and responsive CSS." data-reveal data-delay="1">
+      <div class="thumb"><img src="assets/images/project-8.jpg" alt="Sample preview of the School Website project" loading="lazy" width="640" height="400"><span class="demo-flag">Demonstration project</span></div>
+      <div class="project-body"><h3>School Website</h3><p>A responsive educational institution website.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-details><i class="fa-solid fa-circle-info"></i> View Details</button>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i class="fa-solid fa-play"></i> Live Demo</a>
+          <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div></div></article>
+  </div>
+</div></section>
+<!-- Details pop-up (filled by projects.js) -->
+<div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box"><button class="modal-close" type="button" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+    <img src="assets/images/project-1.jpg" alt="">
+    <div class="modal-content"><h3 id="modal-title"></h3><div class="tags" id="modal-tags"></div><p id="modal-desc"></p>
+      <p class="note">Demonstration project. No live demo or repository is published yet.</p></div></div></div>
+<section class="section"><div class="container"><div class="cta" data-reveal>
+  <h2>Let's build something together</h2>
+  <p>I am open to learning opportunities, internships and small beginner-friendly projects.</p>
+  <div class="btn-row"><a class="btn btn-primary" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+  <a class="btn btn-outline" href="resume.html"><i class="fa-solid fa-file-lines"></i> View Resume</a></div></div></div></section>
+</main>
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">SHELI<span> RAI</span></a>
+        <p>An aspiring web developer from Lalitpur, Nepal, building responsive websites with HTML, CSS and JavaScript.</p>
+        <div class="socials"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (placeholder link - edit in HTML)"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (placeholder link - edit in HTML)"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (placeholder link - edit in HTML)"><i class="fa-brands fa-facebook-f"></i></a></div>
+      </div>
+      <div><h4>Quick links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+9779856526625">9856526625</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:shelirai@gmail.com">shelirai@gmail.com</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Lalitpur, Nepal</li></ul></div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="year">2026</span> Sheli Rai. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/projects.js"></script>
+</body>
+</html>

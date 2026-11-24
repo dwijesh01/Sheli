@@ -1,0 +1,131 @@
+/* ==========================================================
+   RESPONSIVE STYLES - add-ons for larger screens (mobile-first)
+   Breakpoints: 480 (large phones), 768 (tablet), 1024 (laptop), 1440 (large desktop)
+   ========================================================== */
+@media (max-width:360px) {
+  .container {
+    padding: 0 .9rem
+  }
+
+  .btn {
+    padding: .65rem 1.1rem
+  }
+
+  .float-badge {
+    font-size: .72rem;
+    padding: .4rem .6rem
+  }
+
+  .fb-html {
+    left: 0
+  }
+
+  .fb-css {
+    right: 0
+  }
+}
+
+@media (min-width:480px) {
+  .grid-2-sm {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media (min-width:768px) {
+  .section {
+    padding: 5rem 0
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr
+  }
+
+  .cv {
+    padding: 2.4rem
+  }
+
+  .cv-head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end
+  }
+
+  .cv-cols {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .cta {
+    padding: 3.8rem 2rem
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1.2fr
+  }
+}
+
+@media (min-width:1024px) {
+  .menu-toggle {
+    display: none
+  }
+
+  .nav-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: .2rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent
+  }
+
+  .nav-links a {
+    padding: .6rem .85rem
+  }
+
+  .nav-links a.active::after {
+    left: .85rem;
+    bottom: .2rem
+  }
+
+  .hero {
+    padding: 5rem 0 6rem
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr .9fr
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+@media (min-width:1440px) {
+  .container {
+    max-width: 1280px
+  }
+
+  html {
+    font-size: 17px
+  }
+}

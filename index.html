@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sheli Rai | Aspiring Web Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sheli Rai, an aspiring web developer from Lalitpur, Nepal, building responsive websites with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#6366F1">
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sheli Rai | Aspiring Web Developer Portfolio">
+  <meta property="og:description"
+    content="Portfolio of Sheli Rai, an aspiring web developer from Lalitpur, Nepal, building responsive websites with HTML, CSS and JavaScript.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== HEADER (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Sheli Rai - home">SHELI<span> RAI</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"><i
+          class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge-pill">WELCOME TO MY PORTFOLIO</span>
+          <h1>Hi, I'm <span class="name">Sheli Rai</span></h1>
+          <!-- EDIT the typing words in data-words -->
+          <p class="typed-line" aria-live="off"><span id="typed-text"
+              data-words='["Aspiring Web Developer","Creative Problem Solver","Frontend Developer","Future Full-Stack Developer"]'>Aspiring
+              Web Developer</span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="lead">I create modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript. I am
+            passionate about technology, creativity, and continuous learning.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="projects.html"><i class="fa-solid fa-rocket"></i>
+              Explore My Work</a><a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-envelope"></i>
+              Contact Me</a></div>
+          <div class="socials"><a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub (placeholder link - edit in HTML)"><i class="fa-brands fa-github"></i></a><a
+              href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (placeholder link - edit in HTML)"><i class="fa-brands fa-linkedin-in"></i></a><a
+              href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (placeholder link - edit in HTML)"><i class="fa-brands fa-facebook-f"></i></a></div>
+        </div>
+        <div class="hero-visual">
+          <span class="shape shape-1"></span><span class="shape shape-2"></span>
+          <div class="hero-photo"><img src="assets/images/profile.jpg" alt="Profile picture placeholder for Sheli Rai"
+              width="600" height="660"></div>
+          <span class="float-badge fb-html"><i class="fa-brands fa-html5"></i>HTML5</span>
+          <span class="float-badge fb-css"><i class="fa-brands fa-css3-alt"></i>CSS3</span>
+          <span class="float-badge fb-js"><i class="fa-brands fa-js"></i>JavaScript</span>
+        </div>
+      </div>
+    </section>
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="section section-alt">
+      <div class="container about-grid">
+        <div class="about-photo" data-reveal><img src="assets/images/profile.jpg" alt="Sheli Rai profile placeholder"
+            loading="lazy" width="600" height="660"></div>
+        <div data-reveal data-delay="1"><span class="badge-pill">ABOUT ME</span>
+          <h2>A beginner with big curiosity</h2>
+          <p>Hello! I'm Sheli Rai, an aspiring web developer passionate about creating beautiful, responsive, and
+            user-friendly websites. I enjoy learning modern web technologies, solving problems, and turning creative
+            ideas into functional digital experiences.</p>
+          <ul class="info-list">
+            <li><i class="fa-solid fa-location-dot"></i><span><strong>Location</strong> Lalitpur, Nepal</span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span><strong>Education</strong> +2 in Computer Science</span>
+            </li>
+            <li><i class="fa-solid fa-seedling"></i><span><strong>Level</strong> Beginner / Fresher</span></li>
+          </ul>
+          <a class="btn btn-primary" href="about.html">Read My Story</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal><span class="badge-pill">FEATURED SKILLS</span>
+          <h2>What I am good at so far</h2>
+          <p>Sample skill levels that I update as I learn.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card skill" data-reveal data-delay="0">
+            <div class="skill-top">
+              <div class="icon-box"><i class="fa-brands fa-html5"></i></div>
+              <h3>HTML5</h3><span class="pct">85%</span>
+            </div>
+            <div class="bar" role="progressbar" aria-label="HTML5 skill level (sample value)" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="bar-fill" data-level="85"></div>
+            </div>
+            <p>Semantic page structure, forms, accessibility basics and SEO-friendly markup.</p>
+          </article>
+          <article class="card skill" data-reveal data-delay="1">
+            <div class="skill-top">
+              <div class="icon-box"><i class="fa-brands fa-css3-alt"></i></div>
+              <h3>CSS3</h3><span class="pct">75%</span>
+            </div>
+            <div class="bar" role="progressbar" aria-label="CSS3 skill level (sample value)" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="bar-fill" data-level="75"></div>
+            </div>
+            <p>Flexbox, Grid, responsive layouts, variables and simple animations.</p>
+          </article>
+          <article class="card skill" data-reveal data-delay="2">
+            <div class="skill-top">
+              <div class="icon-box"><i class="fa-brands fa-js"></i></div>
+              <h3>JavaScript</h3><span class="pct">55%</span>
+            </div>
+            <div class="bar" role="progressbar" aria-label="JavaScript skill level (sample value)" aria-valuenow="55"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="bar-fill" data-level="55"></div>
+            </div>
+            <p>DOM manipulation, events, form validation and small interactive features.</p>
+          </article>
+        </div>
+        <p class="note" style="margin-top:1.5rem" data-reveal>Skill percentages are editable sample values, not verified
+          assessments.</p>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head" data-reveal><span class="badge-pill">FEATURED PROJECTS</span>
+          <h2>Things I have built while learning</h2>
+          <p>Demonstration projects that show my practice with HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card project" data-category="html-css javascript ui-design"
+            data-long="A multi-page personal portfolio built with semantic HTML, a custom CSS design system and small JavaScript features such as a mobile menu and scroll animations."
+            data-reveal data-delay="0">
+            <div class="thumb"><img src="assets/images/project-1.jpg"
+                alt="Sample preview of the Personal Portfolio Website project" loading="lazy" width="640"
+                height="400"><span class="demo-flag">Demonstration project</span></div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive personal portfolio website.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-details><i
+                    class="fa-solid fa-circle-info"></i> View Details</button>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i
+                    class="fa-solid fa-play"></i> Live Demo</a>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project" data-category="javascript"
+            data-long="A calculator that adds, subtracts, multiplies and divides. It practises DOM events, functions and handling user input."
+            data-reveal data-delay="2">
+            <div class="thumb"><img src="assets/images/project-3.jpg"
+                alt="Sample preview of the Calculator Application project" loading="lazy" width="640" height="400"><span
+                class="demo-flag">Demonstration project</span></div>
+            <div class="project-body">
+              <h3>Calculator Application</h3>
+              <p>A functional calculator with basic arithmetic operations.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-details><i
+                    class="fa-solid fa-circle-info"></i> View Details</button>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i
+                    class="fa-solid fa-play"></i> Live Demo</a>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project" data-category="javascript"
+            data-long="Add, complete and delete tasks. A good exercise in arrays, event handling and updating the page with JavaScript."
+            data-reveal data-delay="3">
+            <div class="thumb"><img src="assets/images/project-4.jpg"
+                alt="Sample preview of the To-Do List Application project" loading="lazy" width="640" height="400"><span
+                class="demo-flag">Demonstration project</span></div>
+            <div class="project-body">
+              <h3>To-Do List Application</h3>
+              <p>An interactive task management application.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-details><i
+                    class="fa-solid fa-circle-info"></i> View Details</button>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="Live demo not available yet"><i
+                    class="fa-solid fa-play"></i> Live Demo</a>
+                <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true" title="GitHub link not added yet"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:2rem"><a class="btn btn-outline" href="projects.html">See All
+            Projects</a></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal><span class="badge-pill">WHAT I CAN DO</span>
+          <h2>Services for small, simple projects</h2>
+          <p>Honest, beginner-friendly services while I keep growing.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card service" data-reveal data-delay="0">
+            <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+            <h3>Basic Website Development</h3>
+            <p>Simple, clean websites for individuals and small businesses, built with HTML, CSS and JavaScript.</p>
+          </article>
+          <article class="card service" data-reveal data-delay="1">
+            <div class="icon-box"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Responsive Website Design</h3>
+            <p>Layouts that adapt to phones, tablets and desktops so every visitor has a good experience.</p>
+          </article>
+          <article class="card service" data-reveal data-delay="2">
+            <div class="icon-box"><i class="fa-solid fa-rectangle-ad"></i></div>
+            <h3>Landing Page Development</h3>
+            <p>Focused one-page sites to introduce an event, product or service.</p>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:2rem"><a class="btn btn-outline" href="services.html">All Services</a>
+        </p>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head" data-reveal><span class="badge-pill">LEARNING JOURNEY</span>
+          <h2>Where I am on the path</h2>
+          <p>Every project teaches me something new.</p>
+        </div>
+        <div class="timeline">
+          <div class="t-item" data-reveal>
+            <h3>Learning the basics</h3>
+            <p>Studied how websites work, starting with HTML structure and CSS styling.</p>
+          </div>
+          <div class="t-item" data-reveal>
+            <h3>Building small projects</h3>
+            <p>Practised by making calculators, to-do lists and responsive layouts.</p>
+          </div>
+          <div class="t-item" data-reveal>
+            <h3>Exploring JavaScript</h3>
+            <p>Adding interactivity: events, DOM updates and form validation.</p>
+          </div>
+          <div class="t-item" data-reveal>
+            <h3>Looking toward backend</h3>
+            <p>Starting PHP and MySQL to understand how full websites work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Details pop-up (filled by projects.js) -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-box"><button class="modal-close" type="button" aria-label="Close details"><i
+            class="fa-solid fa-xmark"></i></button>
+        <img src="assets/images/project-1.jpg" alt="">
+        <div class="modal-content">
+          <h3 id="modal-title"></h3>
+          <div class="tags" id="modal-tags"></div>
+          <p id="modal-desc"></p>
+          <p class="note">Demonstration project. No live demo or repository is published yet.</p>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <h2>Let's build something together</h2>
+          <p>I am open to learning opportunities, internships and small beginner-friendly projects.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="contact.html"><i class="fa-solid fa-paper-plane"></i>
+              Contact Me</a>
+            <a class="btn btn-outline" href="resume.html"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">SHELI<span> RAI</span></a>
+          <p>An aspiring web developer from Lalitpur, Nepal, building responsive websites with HTML, CSS and JavaScript.
+          </p>
+          <div class="socials"><a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub (placeholder link - edit in HTML)"><i class="fa-brands fa-github"></i></a><a
+              href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (placeholder link - edit in HTML)"><i class="fa-brands fa-linkedin-in"></i></a><a
+              href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (placeholder link - edit in HTML)"><i class="fa-brands fa-facebook-f"></i></a></div>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+9779856526625">9856526625</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:shelirai@gmail.com">shelirai@gmail.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Lalitpur, Nepal</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span class="year">2026</span> Sheli Rai. All rights reserved.</p>
+    </div>
+  </footer>
+  <button class="to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

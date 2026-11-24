@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Sheli Rai</title>
+  <meta name="description" content="Contact Sheli Rai, an aspiring web developer in Lalitpur, Nepal, by phone, email, WhatsApp or the contact form.">
+  <meta name="theme-color" content="#6366F1">
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Sheli Rai">
+  <meta property="og:description" content="Contact Sheli Rai, an aspiring web developer in Lalitpur, Nepal, by phone, email, WhatsApp or the contact form.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- ===== HEADER (same on every page) ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo" aria-label="Sheli Rai - home">SHELI<span> RAI</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Contact Me</p>
+  <h1>Contact Me</h1><p>Have a question or a small project? I'd love to hear from you.</p></div></section>
+<section class="section"><div class="container contact-grid">
+  <div class="card" data-reveal>
+    <h2>Contact information</h2>
+    <div class="contact-item"><div class="icon-box"><i class="fa-solid fa-user"></i></div><div><h3>Name</h3><p>Sheli Rai</p></div></div><div class="contact-item"><div class="icon-box"><i class="fa-solid fa-phone"></i></div><div><h3>Phone</h3><a href="tel:+9779856526625">9856526625</a></div></div><div class="contact-item"><div class="icon-box"><i class="fa-solid fa-envelope"></i></div><div><h3>Email</h3><a href="mailto:shelirai@gmail.com">shelirai@gmail.com</a></div></div><div class="contact-item"><div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div><div><h3>WhatsApp</h3><a href="https://wa.me/9779856526625" target="_blank" rel="noopener noreferrer">Chat on WhatsApp (+977 9856526625)</a></div></div><div class="contact-item"><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div><div><h3>Address</h3><p>Lalitpur, Nepal</p></div></div>
+    <h3 style="margin-top:1rem">Social media</h3><div class="socials"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (placeholder link - edit in HTML)"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (placeholder link - edit in HTML)"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (placeholder link - edit in HTML)"><i class="fa-brands fa-facebook-f"></i></a></div>
+  </div>
+  <div class="card" data-reveal data-delay="1">
+    <h2>Send a message</h2>
+    <p class="note" style="margin-bottom:1.2rem">This demo website has no server. The form checks your input, then lets you open your own email app. Messages are not delivered automatically.</p>
+    <form id="contact-form" novalidate>
+      <div class="form-group"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><p class="field-error" id="name-error" role="alert"></p></div>
+      <div class="form-group"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><p class="field-error" id="email-error" role="alert"></p></div>
+      <div class="form-group"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required aria-describedby="subject-error"><p class="field-error" id="subject-error" role="alert"></p></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required aria-describedby="message-error"></textarea><p class="field-error" id="message-error" role="alert"></p></div>
+      <div class="btn-row"><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button><button class="btn btn-ghost" type="reset"><i class="fa-solid fa-rotate-left"></i> Reset Form</button></div>
+      <div class="form-status" id="form-status" tabindex="-1" role="status"></div>
+    </form>
+  </div>
+</div></section>
+</main>
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">SHELI<span> RAI</span></a>
+        <p>An aspiring web developer from Lalitpur, Nepal, building responsive websites with HTML, CSS and JavaScript.</p>
+        <div class="socials"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (placeholder link - edit in HTML)"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (placeholder link - edit in HTML)"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (placeholder link - edit in HTML)"><i class="fa-brands fa-facebook-f"></i></a></div>
+      </div>
+      <div><h4>Quick links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+9779856526625">9856526625</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:shelirai@gmail.com">shelirai@gmail.com</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Lalitpur, Nepal</li></ul></div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="year">2026</span> Sheli Rai. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>

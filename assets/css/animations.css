@@ -1,0 +1,101 @@
+/* ==========================================================
+   ANIMATIONS - lightweight, and switched off for reduced-motion users
+   ========================================================== */
+@keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-10px)
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+/* Hero loads with one gentle sequence */
+.hero-text>* {
+  animation: fadeUp .7s both
+}
+
+.hero-text>*:nth-child(2) {
+  animation-delay: .08s
+}
+
+.hero-text>*:nth-child(3) {
+  animation-delay: .16s
+}
+
+.hero-text>*:nth-child(4) {
+  animation-delay: .24s
+}
+
+.hero-text>*:nth-child(5) {
+  animation-delay: .32s
+}
+
+.hero-text>*:nth-child(6) {
+  animation-delay: .4s
+}
+
+/* Scroll reveal: JS adds .is-visible when the element enters the screen */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s ease, transform .7s ease
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none
+}
+
+.js [data-reveal][data-delay="1"] {
+  transition-delay: .1s
+}
+
+.js [data-reveal][data-delay="2"] {
+  transition-delay: .2s
+}
+
+.js [data-reveal][data-delay="3"] {
+  transition-delay: .3s
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important
+  }
+
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none
+  }
+
+  .bar-fill {
+    transition: none
+  }
+}
